@@ -11,6 +11,7 @@ public class PlayerObj : MonoBehaviour
     private bool isJumping = false;
     public float len;
 
+    private int hp = 100;
     void Start()
     {
         ani = GetComponent<Animator>();
