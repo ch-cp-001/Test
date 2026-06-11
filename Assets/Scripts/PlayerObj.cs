@@ -49,7 +49,8 @@ public class PlayerObj : MonoBehaviour
         if(isJumping)
             ani.SetFloat("ySpeed", rb.velocity.y);
 
-
+        if (hp <= 0)
+            Destroy(gameObject);
     }
 
 
